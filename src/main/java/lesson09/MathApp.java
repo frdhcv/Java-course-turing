@@ -9,7 +9,7 @@ public class MathApp {
         int r = scanner.nextInt();
         System.out.println("Perimeter of square is: " + 4 * a);
         System.out.println("Area of square is: " + 2 * a);
-        System.out.println("Length of circle is: " + Math.PI * r * r);
-        System.out.println("Area of the+ circle is :" + Math.PI * r * r + " CM");
+        System.out.println("Length of circle is: " + Math.PI * Math.pow(a,2));
+        System.out.println("Area of the+ circle is :" + Math.PI * Math.pow(a,2) + " CM");
     }
 }
