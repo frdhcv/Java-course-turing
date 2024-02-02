@@ -8,13 +8,10 @@ public class Task1 {
         String a = scanner.nextLine();
         System.out.println(getName(a));
         System.out.println(lengthOfName(getName(a)));
-
     }
-
     public static String getName(String name) {
         return name.substring(0, name.indexOf("@"));
     }
-
     public static int lengthOfName(String namelength) {
         return namelength.length();
     }
