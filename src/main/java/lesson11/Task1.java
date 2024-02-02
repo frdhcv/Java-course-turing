@@ -7,7 +7,7 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         String a = scanner.nextLine();
         System.out.println(getName(a));
-        System.out.println(Length(getName(a)));
+        System.out.println(lengthOfName(getName(a)));
 
     }
 
@@ -15,7 +15,7 @@ public class Task1 {
         return name.substring(0, name.indexOf("@"));
     }
 
-    public static int Length(String namelength) {
+    public static int lengthOfName(String namelength) {
         return namelength.length();
     }
 }
