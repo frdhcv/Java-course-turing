@@ -10,10 +10,10 @@ public class Task1 {
     }
 
     public static String reverseWord(String word) {
-        StringBuilder reversedWord = new StringBuilder();
+        String reversedWord = "";
         for (int i = word.length() - 1; i >= 0; i--) {
             System.out.print(word.charAt(i));
-        }return reversedWord.toString();
+        }return reversedWord;
     }
 }
 
