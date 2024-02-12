@@ -7,11 +7,9 @@ public class Task {
         int[] age = {18, 19, 21, 27};
         for (int i = 0; i < grade.length; i++) {
             int max = 0;
-            if (max < grade[i]) {
-                System.out.println(grade[i]);
-                System.out.println(name[i]);
-                System.out.println(age[i]);
-            }
+            System.out.println(grade[i]);
+            System.out.println(name[i]);
+            System.out.println(age[i]);
             break;
 
         }
