@@ -1,6 +1,6 @@
 package Modul1;
 
-public class Task {
+public class GradeApp {
     public static void main(String[] args) {
         String[] name = {"Farid", "Vusal", "Ismayil", "Osman"};
         int[] grade = {20, 15, 8, 9};
