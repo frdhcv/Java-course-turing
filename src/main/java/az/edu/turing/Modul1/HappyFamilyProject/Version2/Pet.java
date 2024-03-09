@@ -1,4 +1,4 @@
-package az.edu.turing.Modul1.HappyFamilyProject;
+package az.edu.turing.Modul1.HappyFamilyProject.Version2;
 
 import java.util.Arrays;
 import java.util.Objects;
