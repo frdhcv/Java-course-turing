@@ -1,0 +1,14 @@
+package az.edu.turing.Modul1.HappyFamilyProject.Version4;
+
+public class Main {
+    public static void main(String[] args) {
+        Pet pet=new Pet(Species.DOG,"Rock",5,75,new String[]{"eat,drink,sleep"});
+        Human father=new Human("Vito","Karleone",1950);
+        Human mother=new Human("Jane","Karleone",1955);
+        Family family=new Family(father,mother);
+        Human child=new Human("Tyler","Karleone",1980);
+        family.addChild(child);
+        System.out.println(family);
+        System.out.println(family.countFamily());
+    }
+}
