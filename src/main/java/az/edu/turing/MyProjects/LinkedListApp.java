@@ -11,7 +11,11 @@ public class LinkedListApp {
         System.out.println(linkedList);
         linkedList.addHead(65);
         System.out.println(linkedList);
-        linkedList.deleteIndex(0);
+        linkedList.deleteIndex(2);
+        System.out.println(linkedList);
+        linkedList.delete(15);
+        System.out.println(linkedList);
+        linkedList.update(1,15);
         System.out.println(linkedList);
 
     }

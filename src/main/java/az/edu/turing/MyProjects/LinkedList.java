@@ -105,33 +105,72 @@ public class LinkedList<T> {
     }
 
     public void deleteIndex(int index) {
-        if (head == null) {
+        if (head == null || index < 0) {
             return;
         }
         if (index == 0) {
             head = head.getNext();
+            size--;
+            return;
         }
-        Node <T> temp = head;
-        for (int i = 0; i < size - 1; i++) {
-            if(temp!=null){
-                temp = temp.getNext();
-            }
-
+        Node<T> temp = head;
+        for (int i = 0; temp != null && i < index - 1; i++) {
+            temp = temp.getNext();
         }
-        if(temp!=null){
+        if (temp == null || temp.getNext() == null) {
+            return;
+        }
         temp.setNext(temp.getNext().getNext());
         size--;
     }
-}
+
+    public void delete(T value) {
+        if (head == null || value == null) {
+            return;
+        }
+        if (head.getData().equals(value)) {
+            head = head.getNext();
+            size--;
+            return;
+        }
+        Node<T> prev = null;
+        Node<T> current = head;
+        while (current != null && !current.getData().equals(value)) {
+            prev = current;
+            current = current.getNext();
+        }
+        if (current == null) {
+            return;
+        }
+        if (prev != null) {
+            prev.setNext(current.getNext());
+        }
+        size--;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
 
         Node<T> curr = head;
-        while(curr!=null){
+        while (curr != null) {
             s.append(curr.toString());
             curr = curr.getNext();
         }
         return s.toString();
     }
+    public void update(int index, T value) {
+    if (head == null || index < 0) {
+        return;
+    }
+    Node<T> current = head;
+    for (int i = 0; current != null && i < index; i++) {
+        current = current.getNext();
+    }
+    if (current == null) {
+        return;
+    }
+    current.setData(value);
+}
 }
